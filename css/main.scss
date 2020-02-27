@@ -1037,6 +1037,7 @@ section{
 .section_partners{
     position: relative;
     padding-top: $gap*6;
+    margin-bottom: $gap*10;
      &:before{
          content:'';
          position: absolute;
@@ -1073,4 +1074,48 @@ section{
     .partners_item{
         text-align: center;
     }
+}
+
+.section_text{
+    .container{
+        max-width: 50%;
+        position: relative;
+    }
+    article{
+        color: $dark;
+        letter-spacing: .03em;
+        line-height: 1.4;
+        font-size: 1em;
+
+        h3{
+            font-size: 1.2em;
+        }
+    }
+}
+
+
+.section_info{
+    position: relative;
+    height: 510px;
+
+    .wrap{
+        align-items: flex-end;
+    }
+
+    .info_item{
+        background: $white;
+        padding: $gap*2;
+        margin-top: -200px;
+        margin-right: $gap*2;
+    }
+}
+
+#map-canvas{
+    height: 510px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }

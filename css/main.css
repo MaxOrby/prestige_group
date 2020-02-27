@@ -1035,6 +1035,7 @@ section {
 .section_partners {
   position: relative;
   padding-top: 60px;
+  margin-bottom: 100px;
 }
 
 .section_partners:before {
@@ -1075,5 +1076,49 @@ section {
 
 .partners_grid .partners_item {
   text-align: center;
+}
+
+.section_text .container {
+  max-width: 50%;
+  position: relative;
+}
+
+.section_text article {
+  color: #32414A;
+  letter-spacing: .03em;
+  line-height: 1.4;
+  font-size: 1em;
+}
+
+.section_text article h3 {
+  font-size: 1.2em;
+}
+
+.section_info {
+  position: relative;
+  height: 510px;
+}
+
+.section_info .wrap {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.section_info .info_item {
+  background: #fff;
+  padding: 20px;
+  margin-top: -200px;
+  margin-right: 20px;
+}
+
+#map-canvas {
+  height: 510px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 /*# sourceMappingURL=main.css.map */
