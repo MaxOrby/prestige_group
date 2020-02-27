@@ -33,6 +33,7 @@ body{
     font-size: 1em;
     cursor: pointer;
     text-decoration: none;
+    transition: all .3s;
 
     svg{
         width: 30px;
@@ -911,6 +912,10 @@ section{
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .10);
+        transition: all .3s;
+        position: relative;
+        overflow: hidden;
 
         h3{
             text-transform: uppercase;
@@ -919,6 +924,33 @@ section{
 
         img{
             max-width: 100%;
+            transition: all .3s;
+        }
+
+
+
+        &:hover{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+
+            img{
+                filter: grayscale(1);
+                transform: scale(.98);
+            }
+
+            .btn{
+                transform: translateY(-$gap/2);
+                position: relative;
+
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top:-1000%;
+                    left: -100%;
+                    right: -100%;
+                    bottom:-160%;
+                   
+                }
+            }
         }
     }
 
@@ -971,6 +1003,7 @@ section{
             position: relative;
             outline: 1px solid rgba($white, 0.2);
             outline-offset: -$gap*2;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
         }
 
         .container{
@@ -1010,12 +1043,14 @@ section{
             &::placeholder{
                 color: $lightgrey;
             }
+            opacity: .9;
         }
 
         .btn{
             max-width: 200px;
             font-size: 14px;
             margin: $gap*2 0 $gap*5;
+            opacity: 1;
         }
 
         svg{
@@ -1070,9 +1105,18 @@ section{
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     grid-gap: $gap;
     justify-items: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .10);
 
     .partners_item{
         text-align: center;
+
+        img{
+            filter: grayscale(.8);
+            transition: all .3s;
+            &:hover{
+                filter: grayscale(0);
+            }
+        }
     }
 }
 
@@ -1107,6 +1151,39 @@ section{
         padding: $gap*2;
         margin-top: -200px;
         margin-right: $gap*2;
+        border:solid 1px rgba($lightgrey,.2);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+
+        img{
+            display: block;
+            margin-bottom: $gap*4;
+        }
+
+        address{
+            font-style: normal;;
+        }
+
+      
+
+        h3, strong{
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: $gap/2;
+        }
+
+        h3{
+            margin: 0 auto $gap*2;
+        }
+
+        p{
+            margin:0 auto $gap*2;
+            font-size:1rem;
+        }
+
+        a{
+            text-decoration: none;
+            color:$blue;
+        }
     }
 }
 
