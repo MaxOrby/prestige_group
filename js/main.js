@@ -1,7 +1,7 @@
 // WRAP FIRST WORD OF <h> ELEMENT IN SPAN
 function firstWord(){
 	// get heading elements
-   var $headings = document.querySelectorAll(".title_block h1, .title_block h2");
+   var $headings = document.querySelectorAll(".title_block h1, .title_block h2, .section_company_adv h2");
 	
 	// run through each heading tag and insert spans
 	for (var i = 0, len = $headings.length; i < len; i++) {
